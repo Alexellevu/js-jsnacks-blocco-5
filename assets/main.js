@@ -11,5 +11,12 @@ var zucchina = [
     zucchina7={varietà: 'trombetta', peso: 90, lunghezza:7},
     zucchina8={varietà: 'faenza', peso:95 , lunghezza:14},
     zucchina9={varietà: 'siciliana', peso: 110, lunghezza:10},
-    zucchina10={varietà: 'napoli', peso: 100, lunghezza:13}            
+    zucchina10={varietà: 'napoli', peso: 120, lunghezza:13}            
 ];
+
+//Calcola quanto pesano tutte le zucchine.
+var pesoTotale = 0;
+for (var i= 0; i < zucchina.length; i++)  {
+pesoTotale += zucchina[i].peso;
+}
+console.log(pesoTotale);
