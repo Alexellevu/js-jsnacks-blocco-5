@@ -44,3 +44,18 @@ console.log(arrayLunghe);
 console.log(arrayCorte);
 console.log(pesoCorte);
 console.log(pesoLunghe);
+
+//Snack 3:
+//Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+
+var input  =String(prompt('inserisci una parola'));
+
+
+function inverti(stringa){
+    var splitString  = stringa.split("");
+    var reverseS = splitString.reverse();
+    var resultS = reverseS.join("");
+    return resultS;
+}
+var news = inverti(input);
+console.log(news);
