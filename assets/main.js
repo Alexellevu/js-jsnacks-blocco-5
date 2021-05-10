@@ -48,7 +48,7 @@ console.log(pesoLunghe);
 //Snack 3:
 //Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
 
-var input  =String(prompt('inserisci una parola'));
+/* var input  =String(prompt('inserisci una parola'));
 
 
 function inverti(stringa){
@@ -58,4 +58,30 @@ function inverti(stringa){
     return resultS;
 }
 var news = inverti(input);
-console.log(news);
+console.log(news); */
+
+//Snack 4:
+//Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
+//es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+var array1 = ['a','b','c'];
+var array2 = [1, 2, 3];
+var array3 = [];
+
+function fusion(a1, a2){
+var a3= [];
+for(var i = 0; i < a1.length ;i ++){
+    a3.push(a1[i]);
+    a3.push(a2[i]);
+}
+a3.join("");
+
+return a3;
+}
+array3 = fusion(array1, array2);
+console.log(array3);
+
+
+
+
+
